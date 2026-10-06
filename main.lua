@@ -52,9 +52,44 @@ local moAtlas = SMODS.Atlas {
     py = 95,
 }
 
-local Icon = SMODS.Atlas {
-	key = "neopets_icon",
-	path = "Icons.png",
+local HeartIcon = SMODS.Atlas {
+	key = "neopets_heart_icon",
+	path = "IHeart.png",
+	px = 18,
+	py = 18,
+}
+
+local ClubIcon = SMODS.Atlas {
+	key = "neopets_club_icon",
+	path = "IClub.png",
+	px = 18,
+	py = 18,
+}
+
+local DiamondIcon = SMODS.Atlas {
+	key = "neopets_diamond_icon",
+	path = "IDiamond.png",
+	px = 18,
+	py = 18,
+}
+
+local MoonIcon = SMODS.Atlas {
+	key = "neopets_moon_icon",
+	path = "IMoon.png",
+	px = 18,
+	py = 18,
+}
+
+local SpadeIcon = SMODS.Atlas {
+	key = "neopets_spade_icon",
+	path = "ISpade.png",
+	px = 18,
+	py = 18,
+}
+
+local StarIcon = SMODS.Atlas {
+	key = "neopets_star_icon",
+	path = "IStar.png",
 	px = 18,
 	py = 18,
 }
@@ -71,7 +106,8 @@ SMODS.DeckSkin {
 			pos_style = 'suit',
 			atlas = hAtlas.key,
 			suit_icon = {
-				atlas = Icon.key,
+				atlas = HeartIcon.key,
+				pos = { x = 0, y = 0},
 			},
 		},
 	},
@@ -101,7 +137,8 @@ SMODS.DeckSkin {
 			pos_style = 'suit',
 			atlas = cAtlas.key,
 			suit_icon = {
-				atlas = Icon.key,
+				atlas = ClubIcon.key,
+				pos = { x = 0, y = 0},
 			},
 		},
 	},
@@ -131,7 +168,8 @@ SMODS.DeckSkin {
 			pos_style = 'suit',
 			atlas = dAtlas.key,
 			suit_icon = {
-				atlas = Icon.key,
+				atlas = DiamondIcon.key,
+				pos = { x = 0, y = 0},
 			},
 		},
 	},
@@ -161,7 +199,8 @@ SMODS.DeckSkin {
 			pos_style = 'suit',
 			atlas = sAtlas.key,
 			suit_icon = {
-				atlas = Icon.key,
+				atlas = SpadeIcon.key,
+				pos = { x = 0, y = 0},
 			},
 		},
 	},
@@ -183,7 +222,7 @@ SMODS.DeckSkin {
 	dependencies = "SixSuits",
 	key = "NeopetsDeckSkin-Stars",
 	suit = "six_Stars",
-	loc_txt = "Neopets: ? & Stars",
+	loc_txt = "Neopets: Meepit & Stars",
 	palettes = {
 		{
 			key = 'lc',
@@ -192,7 +231,8 @@ SMODS.DeckSkin {
 			pos_style = 'suit',
 			atlas = stAtlas.key,
 			suit_icon = {
-				atlas = Icon.key,
+				atlas = StarIcon.key,
+				pos = { x = 0, y = 0},
 			},
 		},
 	},
@@ -214,7 +254,7 @@ SMODS.DeckSkin {
 	dependencies = "SixSuits",
 	key = "NeopetsDeckSkin-Moons",
 	suit = "six_Moons",
-	loc_txt = "Neopets: ? & Moons",
+	loc_txt = "Neopets: Feepit & Moons",
 	palettes = {
 		{
 			key = 'lc',
@@ -223,7 +263,8 @@ SMODS.DeckSkin {
 			pos_style = 'suit',
 			atlas = moAtlas.key,
 			suit_icon = {
-				atlas = Icon.key,
+				atlas = MoonIcon.key,
+				pos = { x = 0, y = 0}, { x = 0, y = 0},
 			},
 		},
 	},
